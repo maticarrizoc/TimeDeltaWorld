@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Delta World</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="images/timedeltaworld.png" type="image/png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://db.onlinewebfonts.com/c/9840b3cd3186706467035c79a0effe36?family=a+Regular" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/ol@v9.1.0/dist/ol.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v9.1.0/ol.css">
+	<link href="https://db.onlinewebfonts.com/c/9840b3cd3186706467035c79a0effe36?family=a+Regular" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<!--<div class="search-container">
+			<img src="worldclock.png">
+			<input type="text" id="place_input" placeholder="Enter a location">
+		</div>
+	    <div class="map-clock-container">
+	    	<div class="map-container" id="map"></div>
+	    	<div class="clocks-container">
+			    <div class="clock-container">
+			    	<div class="timeIn"></div>
+		      		<div class="clock">
+			        	<div class="needle second"></div>
+			        	<div class="needle minute"></div>
+			        	<div class="needle hour"></div>
+			        	<div class="center-point"></div>
+			      	</div>
+			      	<div class="time"></div>
+			      	<div class="date"></div>
+			    </div>
+			    <div class="clock-container">
+			    	<h4>Time in </h4>
+		      		<div class="clock">
+			        	<div class="needle second"></div>
+			        	<div class="needle minute"></div>
+			        	<div class="needle hour"></div>
+			        	<div class="center-point"></div>
+			      	</div>
+			      	<div class="time"></div>
+			      	<div class="date"></div>
+			    </div>
+		    </div>
+	    </div>-->
+	    <div class="search-container">
+	    	<div class="title-container">
+	    		<img src="images/timedeltaworld.png">
+	    		<h2>Time Delta World</h2>
+	    	</div>
+			<input type="text" id="place_input" placeholder="Enter a location">
+			<div class="clock-container">
+			    	<div class="timeIn"></div>
+		      		<div id="clock" class="clock" hidden="true">
+			        	<div class="needle second"></div>
+			        	<div class="needle minute"></div>
+			        	<div class="needle hour"></div>
+			        	<div class="center-point"></div>
+			      	</div>
+			      	<div class="time"></div>
+			      	<div class="date"></div>
+			    </div>
+		</div>
+	    <div class="map-container" id="map"></div>
+	</div>
+    <script src="code.js"></script>
+    <script async
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcv3FxygqB06qH2_r4Kqvn3zXeC7bEEsk&libraries=places&callback=initMap">
+	</script>
+</body>
+</html>

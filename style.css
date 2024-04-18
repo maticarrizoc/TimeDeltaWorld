@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "a Regular";
+    src: url("https://db.onlinewebfonts.com/t/9840b3cd3186706467035c79a0effe36.eot");
+    src: url("https://db.onlinewebfonts.com/t/9840b3cd3186706467035c79a0effe36.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/9840b3cd3186706467035c79a0effe36.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/9840b3cd3186706467035c79a0effe36.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/9840b3cd3186706467035c79a0effe36.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/9840b3cd3186706467035c79a0effe36.svg#a Regular")format("svg");
+}
+* {
+	box-sizing: border-box;
+	font-family: "a Regular";
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #8AB4F8;
+	display: block;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.search-container {
+	width: 35vw;
+	display: block;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.title-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-bottom: 15px;
+	font-size: 30px;
+	text-shadow: 
+        -0.5px -0.5px 0 #FFFFFF,  
+        0.5px -0.5px 0 #FFFFFF,
+        -0.5px 0.5px 0 #FFFFFF,
+        0.5px 0.5px 0 #FFFFFF; 
+}
+img{
+	width: 64px;
+}
+input{
+	background: #FFFFFF;
+	color: #161616;
+	border: none;
+	border-radius: 2.5px;
+	width: 100%;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+input:focus {
+	border: 1px solid #ee675c;
+	border-radius: 5px;
+}
+.map-container {
+	width: 65vw;
+	height: 100vh;
+}
+.clock-container {
+  font-family: "a Regular";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 
+        -0.5px -0.5px 0 #FFFFFF,  
+        0.5px -0.5px 0 #FFFFFF,
+        -0.5px 0.5px 0 #FFFFFF,
+        0.5px 0.5px 0 #FFFFFF; 
+  border-radius: 5px;
+  padding: 5px;
+  color: #E9D985;
+}
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 0.01px solid #161616;
+  border-radius: 100%;
+}
+.needle {
+  background-color: #161616;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  width: 3px;
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in;
+}
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 50px;
+  width: 2px;
+  border-top: 0.5px solid #161616;
+}
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 90px;
+  width: 2px;
+  border-top: 0.5px solid #161616;
+}
+.needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 90px;
+  width: 1px;
+  background-color: #EA4335;
+  transition: 1s;
+  border-top: 0.5px solid #EA4335;
+}
+.center-point {
+  background-color: #161616;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.center-point::after {
+  content: '';
+  background-color: #161616;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.timeIn {
+  font-size: 24px;
+  color: #161616;
+}
+.time {
+  font-size: 24px;
+  color: #161616;
+}
+.date {
+  color: #161616;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
